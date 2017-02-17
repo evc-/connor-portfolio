@@ -9,7 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bare - Start Bootstrap Template</title>
+    <title>Connor Shannon</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto+Mono:400,500|Roboto:300,300i,500" rel="stylesheet">
+
+    <!-- font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif; -->
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +26,131 @@
         padding-top: 70px;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     }
+
+/*  title */
+    h1 {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 48pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: left;
+    }
+
+/*  tagline*/
+    h2 {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 24pt;
+      font-weight: 500;
+      text-align: left;
+    }
+
+/*  section header*/
+    h3 {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 24pt;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: left;
+    }
+        
+    .h3_inv {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 24pt;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: left;
+      color: white;
+    }
+        
+    .resume_company {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 14pt;
+      font-weight: 500;
+      text-align: left;
+    }
+        
+    .resume_company_inv {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 12pt;
+      font-weight: 400;
+      text-align: left;
+      color: white;
+    }
+        
+    .resume_position {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 14pt;
+      font-weight: 400;
+      text-align: left;
+    }
+        
+    .caption {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 13pt;
+      font-weight: 400;
+      text-align: center;
+        margin-bottom: 6px;
+    }
+        
+    .thumbnail {
+        margin-bottom: 2px;
+    }
+
+    .body_type {
+      font-family: 'Roboto', sans-serif;
+      font-size: 12pt;
+      font-weight: 300;
+        text-align: left;
+    }
+
+    strong {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16pt;
+      font-weight: 500;
+    }
+
+    em {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300i;
+    }
+
+    a {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16pt;
+      font-weight: 500;
+      color: red;
+    }
+        
+    hr.style11 {
+        height: 6px;
+        background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+        border: 0;
+    }
+        
+
+    .left {
+      background-image: url("img/header_mech.jpg");
+      min-height: 100vh;
+      position: fixed;
+      background-size: cover;
+      overflow-y: hidden;
+      height : 500px;
+      color : #FFF;
+    }
+
+      .right{
+      /*background-color:blue;*/
+      height : 100%;
+    }
+
+    .mininav {
+        text-align: left;
+    }
+        
+    .section_red {
+        background-color: firebrick;
+    }
+
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -66,22 +197,450 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
 
+    <div class="container-fluid">
+        
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>A Bootstrap Starter Template</h1>
-                <p class="lead">Complete with pre-defined file paths that you won't have to change!!</p>
-                <ul class="list-unstyled">
-                    <li>Bootstrap v3.3.7</li>
-                    <li>jQuery v1.11.1</li>
-                </ul>
+            
+            <div class="col-sm-6 text-center left">
+                <div class="left_photo"> 
+                </div> 
+                Photo
             </div>
-        </div>
+            
+             <div class="col-sm-6 text-center">
+                
+            </div>
+            
+            <div class="col-sm-6 text-center right">
+                <h1>
+                Connor Shannon
+                </h1>
+
+                <h2>
+                Engineering Physics
+                </h2>
+                <br>
+                <br>
+                
+                
+                    <div class="row">
+                        <div class="col-xs-12" role="navigation">
+                            <nav class="mininav">
+                                <ul class="nav nav-pills nav-stacked">
+                                  <li role="presentation" class="active"><a href="#">Resume</a></li>
+                                  <li role="presentation"><a href="#">Transcript</a></li>
+                                  <li role="presentation"><a href="#">Performance Reviews</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                
+                
+                <br>
+                <br>
+                
+                <h3>Projects</h3>
+                <hr class="style11">
+                
+                <div class= "row">
+                    
+                    <div class="col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="http://placehold.it/400x300">
+                        </a>
+                        <div class="caption">
+                            Project 1
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="http://placehold.it/400x300">
+                        </a>
+                         <div class="caption">
+                            Project 2
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="http://placehold.it/400x300">
+                        </a>
+                         <div class="caption">
+                            Project 3
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="http://placehold.it/400x300">
+                        </a>
+                        <div class="caption">
+                            Project 4
+                        </div>
+                    </div>
+                    
+                     <div class="col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="http://placehold.it/400x300">
+                        </a>
+                        <div class="caption">
+                            Project 5
+                        </div>
+                    </div>
+                    
+                     <div class="col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="http://placehold.it/400x300">
+                        </a>
+                        <div class="caption">
+                            Project 6
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="row">
+                    <div class="col-xs-12">
+                    <h3>Resume</h3>
+                    <hr class="style11">
+                    
+                        <p class="body_type">
+                        <span class="resume_company">
+                            General Fusion
+                            <br>
+                        </span>
+                        <span class="resume_position">
+                            Magnetic Field Probe Calibration
+                            <br>
+                            </span>
+                        <em>May 2016 - Aug 2016</em>
+                        <br>
+                            <br>
+                        Used digital signal processing, electrodynamics theory and finite element analysis to improve accuracy of magnetic field probes. Learned new programming language on the fly. Discovered large error in physics simulation, and coded automated solution with error checking. Led B-probe calibration for new plasma injector. Invited to return for a suitable position.
+                        </p>
+                    </div>
+                </div>
+                
+                
+                
+                <br>
+                <br>
+                 <div class="row">
+                    <div class="col-xs-12">
+                    
+                        <p class="body_type">
+                        <span class="resume_company">
+                            Tesla Motors 
+                            <br>
+                        </span>
+                        <span class="resume_position">
+                            HV distribution - Mechanical Engineering Intern
+                            <br>
+                            </span>
+                        <em>May 2015 - Dec 2016</em>
+                        <br>
+                            <br>
+                        Developed an automated tester for cycling high power connections. Worked on prototyping an advanced moving electro-mechanical assembly. Designed innovative new production tools for the line. Designed advanced test setups for key HV connections. Work was recognized as being high quality.
+                        </p>
+                    </div>
+                </div>
+                
+                
+                <br>
+                <br>
+                       <div class="row">
+                    <div class="col-xs-12">
+                    
+                        <p class="body_type">
+                        <span class="resume_company">
+                            UBC Open Robotics
+                            <br>
+                        </span>
+                        <span class="resume_position">
+                            Founder and Team Lead
+                            <br>
+                            </span>
+                        <em>June 2014 - Present</em>
+                        <br>
+                            <br>
+                        Founded new team in 3rd year. Wrote team mission statement, created new team organization, provided team vision, supervised creation of logo, promotional materials, and comprehensive team website.Created an introductory prototyping training program.Designed an anthropomorphic, cable actuated, carbon fibre arm for the next generation robot. Designed mech and elec, plus buily a fully functional small-scale robot platform to train team members.
+                        </p>
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+                 <div class="row">
+                    <div class="col-xs-12">
+                    
+                        <p class="body_type">
+                        <span class="resume_company">
+                            Telsa Motors
+                            <br>
+                        </span>
+                        <span class="resume_position">
+                            Manufacturing Test Intern 
+                            <br>
+                            </span>
+                        <em>Jan 2014 - April 2014</em>
+                        <br>
+                            <br>
+                        In 4 months completed 10 projects, 5 mechanical, 2 electrical, 2 project management, and 1 thermo experiment, managed two projects worth more than $25,000, and in total was responsible for more than $100,000 of purchases. Completed a rush electrical box in one week, including ordering parts, learning Altium, doing mech layout, and building it. Took initiative to design, and build an innovative manual test fixture made with 4 bar linkages and over center mechanism. Interacted regularly with engineers, contractors, vendors, and manufacturing associates, designed and built an intern community website to help people find housing in my spare time.
+                        </p>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="row section_red">
+                    <div class="col-xs-12">
+                    <h3 class="h3_inv">Strengths</h3>
+                    <hr class="style11">
+                        <span class="resume_company_inv">
+                            <ul>
+                                <li>Rapid Prototyping</li>
+                                <li>Mechatronic Systems</li>
+                                <li>Creative Problem Solving</li>
+                                <li>Application of High Level Physics to Engineering</li>
+                                <li>Quick Learner</li>
+                                <li>Broad Knowledge Base</li>
+                                <li>Keen Mechanical Intuition</li>
+                            </ul>
+                            <br>
+                        </span>
+
+                    </div>
+                </div>
+                
+                
+                <h3>Skills</h3>
+                <hr class="style11">
+                
+                <div class= "row">
+                    
+                    <div class="col-sm-3 col-xs-6 thumb">
+                        
+                        <img class="img-responsive" src="img/industrial-robot.svg">
+                        
+                        <div class="caption">
+                            Project 1
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-3 col-xs-6 thumb">
+                        <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="img/artificial-intelligence.svg">
+                        </a>
+                         <div class="caption">
+                            Project 2
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-3 col-xs-6 thumb">
+                        <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="img/circuit-board.svg">
+                        </a>
+                         <div class="caption">
+                            Project 3
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-3 col-xs-6 thumb">
+                        <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="img/engine.svg">
+                        </a>
+                        <div class="caption">
+                            Project 4
+                        </div>
+                    </div>
+                    
+                     <div class="col-sm-3 col-xs-6 thumb">
+                        <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="img/engineering.svg">
+                        </a>
+                        <div class="caption">
+                            Project 4
+                        </div>
+                    </div>
+                    
+                     <div class="col-sm-3 col-xs-6 thumb">
+                        <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="img/search-engine.svg">
+                        </a>
+                        <div class="caption">
+                            Project 4
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                 <div class="row section_red">
+                    <div class="col-xs-12">
+                    <h3 class="h3_inv">Education</h3>
+                    <hr class="style11">
+                        
+                        
+                        <p class="body_type">
+                        <span class="resume_company">
+                            University of British Columbia 
+                            <br>
+                        </span>
+                        <span class="resume_position">
+                            Engineering Physics 
+                            <br>
+                            </span>
+                        <em>Sept 2012 - Present</em>
+                        <br>
+                       Average: 82 
+                        </p>
+                        
+                         <p class="body_type">
+                        <span class="resume_company">
+                            University of Alberta 
+                            <br>
+                        </span>
+                        <span class="resume_position">
+                            Molecular BioChem and BioChem Honours  
+                            <br>
+                            </span>
+                        <em>Sept 2011 - Dec 2011</em>
+                        <br>
+                       GPA: 3.7
+                        </p>
+                        
+                         <p class="body_type">
+                        <span class="resume_company">
+                            Red Deer College 
+                            <br>
+                        </span>
+                        <span class="resume_position">
+                            General Science
+                            <br>
+                            </span>
+                        <em>Sept 2010 - April 2011</em>
+                        <br>
+                       GPA: 3.94 
+                        </p>
+
+                    </div>
+                </div>
+                
+                
+                  <div class="row">
+                    <div class="col-xs-12">
+                    <h3>Other Experience</h3>
+                    <hr class="style11">
+                    
+                        <p class="body_type">
+                        <span class="resume_company">
+                            Thunderbots @ Home
+                            <br>
+                        </span>
+                        <span class="resume_position">
+                            Arm Mechanical and Drive Train Lead
+                            <br>
+                            </span>
+                        <em>Sept 2012 - May 2014</em>
+                        <br>
+                            <br>
+                       Designed and fabricated a modular drive train unit capable of propelling a 100kg robot, maximized available production resources by adapting a tab and slot method so complex high-precision 3D parts could be made using the available waterjet cutter instead of being outsourced for expensive machining. Presented drive train progress weekly and made animated video for annual wrap-up meeting. Further increased manufacturability standards by designing arm with no machining required. Was involved with many internal and industry design reviews, presenting, critiquing, and observing. Designed and built iso-elastic arm build to maximize power/performance ratio (no machining required.)
+                        </p>
+                    </div>
+                </div>
+                
+                
+                
+                <br>
+                <br>
+                 <div class="row">
+                    <div class="col-xs-12">
+                    
+                        <p class="body_type">
+                        <span class="resume_company">
+                            Makloc Buildings Ltd.  
+                            <br>
+                        </span>
+                        <span class="resume_position">
+                            Junior Draughtsman
+                            <br>
+                            </span>
+                        <em>June 2013 - Aug 2013</em>
+                        <br>
+                            <br>
+                        Used AutoDesk Inventor to model modular steel buildings and make technical drawings, interacted with project managers, salesmen, and engineers on every project to ensure strict QC standards were met. Used AD Inventor’s frame generator to create complicated structural steel constructions such as custom stairs, ladders, platforms and steel skids along with shop fabrication drawings and BOM. Created intelligent parts and code-driven assemblies to almost double personal draughting productivity. Implemented an improved drawing template that filled in architectural notes and title blocks automatically, saving 0.5-2 hours drafting time per building and decreasing title block errors.
+                        </p>
+                    </div>
+                </div>
+                
+                
+                <br>
+                <br>
+                       <div class="row">
+                    <div class="col-xs-12">
+                    
+                        <p class="body_type">
+                        <span class="resume_company">
+                            Red Deer College Student Engineering Design Competition
+                            <br>
+                        </span>
+                        <span class="resume_position">
+                            First Place Finish
+                            <br>
+                            </span>
+                        <em>Sept 2010 - May 2011</em>
+                        <br>
+                            <br>
+                       Came up with concept for water-purification device, and created manufacturing plan. Converted a bicycle pump into the vacuum pump required to operate our device. Cooperated with the Innovation centre at RDC to get parts 3D printed, waterjet cut, rolled, welded and tapped.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row section_red">
+                    <div class="col-xs-12">
+                    <h3 class="h3_inv">Interests</h3>
+                    <hr class="style11">
+                        
+                        
+                        <p class="body_type">
+                        
+                        <span class="resume_position">
+                            Passionate about science, nature, technology, music, and life! Enjoys playing acoustic and electronic music. Keeps
+fit by biking, hiking, rock climbing and running.
+                            </span>
+                            <br>
+                        </p>
+                       
+
+                    </div>
+                </div>
+             
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+
+
+            </div>
+        
+        
         <!-- /.row -->
 
     </div>
     <!-- /.container -->
+
+
+
+
 
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
