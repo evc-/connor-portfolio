@@ -1,0 +1,127 @@
+body {
+    padding-top: 70px;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+/*  title */
+h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 48pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+/*  tagline*/
+h2 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 24pt;
+  font-weight: 500;
+  text-align: left;
+}
+
+/*  section header*/
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 24pt;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.h3_inv {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 24pt;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+  color: white;
+}
+
+.resume_company {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14pt;
+  font-weight: 500;
+  text-align: left;
+}
+
+.resume_company_inv {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12pt;
+  font-weight: 400;
+  text-align: left;
+  color: white;
+}
+
+.resume_position {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14pt;
+  font-weight: 400;
+  text-align: left;
+}
+
+.caption {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 13pt;
+  font-weight: 400;
+  text-align: center;
+    margin-bottom: 6px;
+}
+
+.thumbnail {
+    margin-bottom: 2px;
+}
+
+.body_type {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12pt;
+  font-weight: 300;
+    text-align: left;
+}
+
+strong {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16pt;
+  font-weight: 500;
+}
+
+em {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300i;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16pt;
+  font-weight: 500;
+  color: red;
+}
+
+hr.style11 {
+    height: 6px;
+    background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+}
+
+
+.left {
+  min-height: 100vh;
+  position: fixed;
+  background-size: cover;
+  overflow-y: hidden;
+  height : 500px;
+  color : #FFF;
+}
+
+  .right{
+  /*background-color:blue;*/
+  height : 100%;
+}
+
+.mininav {
+    text-align: left;
+}
+
+.section_red {
+    background-color: firebrick;
+}

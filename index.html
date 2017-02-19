@@ -21,137 +21,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <style>
-    body {
-        padding-top: 70px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
+    <link href="css/portfolio_custom.css" rel="stylesheet">
 
-/*  title */
-    h1 {
-      font-family: 'Roboto Condensed', sans-serif;
-      font-size: 48pt;
-      font-weight: 700;
-      text-transform: uppercase;
-      text-align: left;
-    }
-
-/*  tagline*/
-    h2 {
-      font-family: 'Roboto Mono', monospace;
-      font-size: 24pt;
-      font-weight: 500;
-      text-align: left;
-    }
-
-/*  section header*/
-    h3 {
-      font-family: 'Roboto Condensed', sans-serif;
-      font-size: 24pt;
-      font-weight: 400;
-      text-transform: uppercase;
-      text-align: left;
-    }
-        
-    .h3_inv {
-      font-family: 'Roboto Condensed', sans-serif;
-      font-size: 24pt;
-      font-weight: 400;
-      text-transform: uppercase;
-      text-align: left;
-      color: white;
-    }
-        
-    .resume_company {
-      font-family: 'Roboto Mono', monospace;
-      font-size: 14pt;
-      font-weight: 500;
-      text-align: left;
-    }
-        
-    .resume_company_inv {
-      font-family: 'Roboto Mono', monospace;
-      font-size: 12pt;
-      font-weight: 400;
-      text-align: left;
-      color: white;
-    }
-        
-    .resume_position {
-      font-family: 'Roboto Mono', monospace;
-      font-size: 14pt;
-      font-weight: 400;
-      text-align: left;
-    }
-        
-    .caption {
-      font-family: 'Roboto Mono', monospace;
-      font-size: 13pt;
-      font-weight: 400;
-      text-align: center;
-        margin-bottom: 6px;
-    }
-        
-    .thumbnail {
-        margin-bottom: 2px;
-    }
-
-    .body_type {
-      font-family: 'Roboto', sans-serif;
-      font-size: 12pt;
-      font-weight: 300;
-        text-align: left;
-    }
-
-    strong {
-      font-family: 'Roboto', sans-serif;
-      font-size: 16pt;
-      font-weight: 500;
-    }
-
-    em {
-      font-family: 'Roboto', sans-serif;
-      font-weight: 300i;
-    }
-
-    a {
-      font-family: 'Roboto', sans-serif;
-      font-size: 16pt;
-      font-weight: 500;
-      color: red;
-    }
-        
-    hr.style11 {
-        height: 6px;
-        background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
-        border: 0;
-    }
-        
-
-    .left {
-      background-image: url("img/header_mech.jpg");
-      min-height: 100vh;
-      position: fixed;
-      background-size: cover;
-      overflow-y: hidden;
-      height : 500px;
-      color : #FFF;
-    }
-
-      .right{
-      /*background-color:blue;*/
-      height : 100%;
-    }
-
-    .mininav {
-        text-align: left;
-    }
-        
-    .section_red {
-        background-color: firebrick;
-    }
-
-    </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -159,7 +30,28 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script>
+      class Item{
+        constructor(name, image, body) {
+          this.name = name;
+          this.image = image;
+          this.body = body;
+        }
+        displayProject(){
+          console.log(document.getElementById("main_photo").style);
+          document.getElementById("main_photo").style.backgroundImage = "url('" + this.image + "')";
+        }
+      };
 
+      var projects = [
+        new Item("ROSEbot","./img/ROSEbot1.jpg", "ROSEbot the robot, blah-blah."),
+      ];
+
+
+      function setProject(projectNum) {
+        projects[projectNum].displayProject();
+      }
+    </script>
 </head>
 
 <body>
@@ -199,19 +91,18 @@
     <!-- Page Content -->
 
     <div class="container-fluid">
-        
+
         <div class="row">
-            
-            <div class="col-sm-6 text-center left">
-                <div class="left_photo"> 
-                </div> 
-                Photo
+
+            <div  id="main_photo" style="background-image:url('./img/header_mech.jpg')"   class="col-sm-6 text-center left">
+                <div class="left_photo">
+                </div>
             </div>
-            
+
              <div class="col-sm-6 text-center">
-                
+
             </div>
-            
+
             <div class="col-sm-6 text-center right">
                 <h1>
                 Connor Shannon
@@ -222,8 +113,8 @@
                 </h2>
                 <br>
                 <br>
-                
-                
+
+
                     <div class="row">
                         <div class="col-xs-12" role="navigation">
                             <nav class="mininav">
@@ -235,25 +126,25 @@
                             </nav>
                         </div>
                     </div>
-                
-                
+
+
                 <br>
                 <br>
-                
+
                 <h3>Projects</h3>
                 <hr class="style11">
-                
+
                 <div class= "row">
-                    
+
                     <div class="col-md-4 col-xs-6 thumb">
                         <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300">
+                        <img class="img-responsive" onClick="setProject(0)" src="http://placehold.it/400x300">
                         </a>
                         <div class="caption">
                             Project 1
                         </div>
                     </div>
-                    
+
                     <div class="col-md-4 col-xs-6 thumb">
                         <a class="thumbnail" href="#">
                         <img class="img-responsive" src="http://placehold.it/400x300">
@@ -262,7 +153,7 @@
                             Project 2
                         </div>
                     </div>
-                    
+
                     <div class="col-md-4 col-xs-6 thumb">
                         <a class="thumbnail" href="#">
                         <img class="img-responsive" src="http://placehold.it/400x300">
@@ -271,7 +162,7 @@
                             Project 3
                         </div>
                     </div>
-                    
+
                     <div class="col-md-4 col-xs-6 thumb">
                         <a class="thumbnail" href="#">
                         <img class="img-responsive" src="http://placehold.it/400x300">
@@ -280,7 +171,7 @@
                             Project 4
                         </div>
                     </div>
-                    
+
                      <div class="col-md-4 col-xs-6 thumb">
                         <a class="thumbnail" href="#">
                         <img class="img-responsive" src="http://placehold.it/400x300">
@@ -289,7 +180,7 @@
                             Project 5
                         </div>
                     </div>
-                    
+
                      <div class="col-md-4 col-xs-6 thumb">
                         <a class="thumbnail" href="#">
                         <img class="img-responsive" src="http://placehold.it/400x300">
@@ -298,14 +189,14 @@
                             Project 6
                         </div>
                     </div>
-                    
+
                 </div>
-                
+
                 <div class="row">
                     <div class="col-xs-12">
                     <h3>Resume</h3>
                     <hr class="style11">
-                    
+
                         <p class="body_type">
                         <span class="resume_company">
                             General Fusion
@@ -322,17 +213,17 @@
                         </p>
                     </div>
                 </div>
-                
-                
-                
+
+
+
                 <br>
                 <br>
                  <div class="row">
                     <div class="col-xs-12">
-                    
+
                         <p class="body_type">
                         <span class="resume_company">
-                            Tesla Motors 
+                            Tesla Motors
                             <br>
                         </span>
                         <span class="resume_position">
@@ -346,13 +237,13 @@
                         </p>
                     </div>
                 </div>
-                
-                
+
+
                 <br>
                 <br>
                        <div class="row">
                     <div class="col-xs-12">
-                    
+
                         <p class="body_type">
                         <span class="resume_company">
                             UBC Open Robotics
@@ -369,19 +260,19 @@
                         </p>
                     </div>
                 </div>
-                
+
                 <br>
                 <br>
                  <div class="row">
                     <div class="col-xs-12">
-                    
+
                         <p class="body_type">
                         <span class="resume_company">
                             Telsa Motors
                             <br>
                         </span>
                         <span class="resume_position">
-                            Manufacturing Test Intern 
+                            Manufacturing Test Intern
                             <br>
                             </span>
                         <em>Jan 2014 - April 2014</em>
@@ -391,9 +282,9 @@
                         </p>
                     </div>
                 </div>
-                
-                
-                
+
+
+
                 <div class="row section_red">
                     <div class="col-xs-12">
                     <h3 class="h3_inv">Strengths</h3>
@@ -413,22 +304,22 @@
 
                     </div>
                 </div>
-                
-                
+
+
                 <h3>Skills</h3>
                 <hr class="style11">
-                
+
                 <div class= "row">
-                    
+
                     <div class="col-sm-3 col-xs-6 thumb">
-                        
+
                         <img class="img-responsive" src="img/industrial-robot.svg">
-                        
+
                         <div class="caption">
                             Project 1
                         </div>
                     </div>
-                    
+
                     <div class="col-sm-3 col-xs-6 thumb">
                         <a class="thumbnail" href="#">
                         <img class="img-responsive" src="img/artificial-intelligence.svg">
@@ -437,7 +328,7 @@
                             Project 2
                         </div>
                     </div>
-                    
+
                     <div class="col-sm-3 col-xs-6 thumb">
                         <a class="thumbnail" href="#">
                         <img class="img-responsive" src="img/circuit-board.svg">
@@ -446,7 +337,7 @@
                             Project 3
                         </div>
                     </div>
-                    
+
                     <div class="col-sm-3 col-xs-6 thumb">
                         <a class="thumbnail" href="#">
                         <img class="img-responsive" src="img/engine.svg">
@@ -455,7 +346,7 @@
                             Project 4
                         </div>
                     </div>
-                    
+
                      <div class="col-sm-3 col-xs-6 thumb">
                         <a class="thumbnail" href="#">
                         <img class="img-responsive" src="img/engineering.svg">
@@ -464,7 +355,7 @@
                             Project 4
                         </div>
                     </div>
-                    
+
                      <div class="col-sm-3 col-xs-6 thumb">
                         <a class="thumbnail" href="#">
                         <img class="img-responsive" src="img/search-engine.svg">
@@ -473,47 +364,47 @@
                             Project 4
                         </div>
                     </div>
-                    
-                    
+
+
                 </div>
-                
+
                  <div class="row section_red">
                     <div class="col-xs-12">
                     <h3 class="h3_inv">Education</h3>
                     <hr class="style11">
-                        
-                        
+
+
                         <p class="body_type">
                         <span class="resume_company">
-                            University of British Columbia 
+                            University of British Columbia
                             <br>
                         </span>
                         <span class="resume_position">
-                            Engineering Physics 
+                            Engineering Physics
                             <br>
                             </span>
                         <em>Sept 2012 - Present</em>
                         <br>
-                       Average: 82 
+                       Average: 82
                         </p>
-                        
+
                          <p class="body_type">
                         <span class="resume_company">
-                            University of Alberta 
+                            University of Alberta
                             <br>
                         </span>
                         <span class="resume_position">
-                            Molecular BioChem and BioChem Honours  
+                            Molecular BioChem and BioChem Honours
                             <br>
                             </span>
                         <em>Sept 2011 - Dec 2011</em>
                         <br>
                        GPA: 3.7
                         </p>
-                        
+
                          <p class="body_type">
                         <span class="resume_company">
-                            Red Deer College 
+                            Red Deer College
                             <br>
                         </span>
                         <span class="resume_position">
@@ -522,18 +413,18 @@
                             </span>
                         <em>Sept 2010 - April 2011</em>
                         <br>
-                       GPA: 3.94 
+                       GPA: 3.94
                         </p>
 
                     </div>
                 </div>
-                
-                
+
+
                   <div class="row">
                     <div class="col-xs-12">
                     <h3>Other Experience</h3>
                     <hr class="style11">
-                    
+
                         <p class="body_type">
                         <span class="resume_company">
                             Thunderbots @ Home
@@ -550,17 +441,17 @@
                         </p>
                     </div>
                 </div>
-                
-                
-                
+
+
+
                 <br>
                 <br>
                  <div class="row">
                     <div class="col-xs-12">
-                    
+
                         <p class="body_type">
                         <span class="resume_company">
-                            Makloc Buildings Ltd.  
+                            Makloc Buildings Ltd.
                             <br>
                         </span>
                         <span class="resume_position">
@@ -574,13 +465,13 @@
                         </p>
                     </div>
                 </div>
-                
-                
+
+
                 <br>
                 <br>
                        <div class="row">
                     <div class="col-xs-12">
-                    
+
                         <p class="body_type">
                         <span class="resume_company">
                             Red Deer College Student Engineering Design Competition
@@ -597,42 +488,42 @@
                         </p>
                     </div>
                 </div>
-                
+
                 <div class="row section_red">
                     <div class="col-xs-12">
                     <h3 class="h3_inv">Interests</h3>
                     <hr class="style11">
-                        
-                        
+
+
                         <p class="body_type">
-                        
+
                         <span class="resume_position">
                             Passionate about science, nature, technology, music, and life! Enjoys playing acoustic and electronic music. Keeps
 fit by biking, hiking, rock climbing and running.
                             </span>
                             <br>
                         </p>
-                       
+
 
                     </div>
                 </div>
-             
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
+
+
+
             </div>
 
 
             </div>
-        
-        
+
+
         <!-- /.row -->
 
     </div>
